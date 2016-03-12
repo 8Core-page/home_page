@@ -1,0 +1,22 @@
+{
+  "name": "8core-page",
+  "homepage": "https://github.com/8Core/home_page",
+  "authors": [
+    "8core"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.0"
+  }
+}
