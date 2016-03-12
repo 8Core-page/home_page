@@ -4,6 +4,7 @@ angular.module('octoCore', ['ui.router', 'controller', 'factories'])
 
 .config(function ($stateProvider, $httpProvider, $urlRouterProvider) {
     $httpProvider.defaults.headers.post['Content-Type'] = "application/json";
+
     $stateProvider
         .state('home', {
             url: '/home',

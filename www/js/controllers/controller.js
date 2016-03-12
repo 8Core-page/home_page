@@ -9,8 +9,8 @@ angular.module('controller', [])
 
     $scope.arrayMembers = factory.getMembers();
 
-    $scope.hola = function(){
-        console.log('pancho: '+factory.panchoElTriste());
+    $scope.hola = function(pancho){
+        console.log(pancho+': '+factory.panchoElTriste());
     }
 
 });
