@@ -1,7 +1,6 @@
 //angular.module('octoCore', ['ui.router', 'controllers', 'factories'])
 
 angular.module('octoCore', ['ui.router', 'controller', 'factories'])
-
 .config(function ($stateProvider, $httpProvider, $urlRouterProvider) {
     $httpProvider.defaults.headers.post['Content-Type'] = "application/json";
 
@@ -16,3 +15,4 @@ angular.module('octoCore', ['ui.router', 'controller', 'factories'])
     $urlRouterProvider.when('', '/home');
     $urlRouterProvider.otherwise('/home');
 })
+angular.module('bSModule', ['ui.bootstrap'])
