@@ -16,12 +16,17 @@
     <!--Factorías-->
     <script type="text/javascript" src="js/factories/factory.js"></script>
     <!--import head-->
-   <div ng-include="'views/partials/head.html'"></div>
+    <div ng-include="'views/partials/head.html'"></div>
+
+
 </head>
 
 <body ng-app="octoCore" class="container">
-     <ui-view></ui-view>
-  <!--import FOOTER-->
- <div ng-include="'views/partials/footer.html'"></div>
+    <ui-view></ui-view>
+    <!--import FOOTER-->
+    <div ng-include="'views/partials/footer.html'"></div>
+    <scrpit src="../bower_components/angular-bootstrap/ui-bootstrap.js"></scrpit>
+    <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
 </body>
+
 </html>
