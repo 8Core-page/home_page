@@ -33,22 +33,25 @@ angular.module('controller', [])
         $scope.addSlide();
     }
     /*------------------------ Carrousel Productos --------------------*/
-      $scope.theInterval = 3000;
-      $scope.isActive = 0;
-      currIndex = 0;
-      var photos = $scope.photos =[
-        {
-          image: 'http://lorempixel.com/400/200/'
-        },
-        {
-          image: 'http://lorempixel.com/400/200/food'
-        },
-        {
-          image: 'http://lorempixel.com/400/200/sports'
-        },
-        {
-          image: 'http://lorempixel.com/400/200/people'
-        }
-      ];
+    $scope.navbarCollapsedP = true;
+    $scope.myIntervalP = 5000;
+    $scope.noWrapSlidesP = false;
+    $scope.activeP = 0;
+    var slidesP = $scope.slidesP = [];
+    var currIndexP = 0;
+
+    $scope.addSlideP = function () {
+        var newWidthP = 600 + slidesP.length + 1;
+        slidesP.push({
+            image: 'http://lorempixel.com/' + newWidthP + '/300',
+            text: ['Nice image', 'Awesome photograph', 'That is so cool', 'I love that'][slidesP.length % 4],
+            id: currIndexP++
+        });
+    };
+
+
+    for (var i = 0; i < 4; i++) {
+        $scope.addSlideP();
+    }
 
 })
