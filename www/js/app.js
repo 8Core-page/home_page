@@ -1,6 +1,6 @@
 //angular.module('octoCore', ['ui.router', 'controllers', 'factories'])
 
-angular.module('octoCore', ['ui.router', 'controller', 'factories','ui.bootstrap'])
+angular.module('octoCore', ['ui.router', 'controller', 'factories','ui.bootstrap','ngAnimate'])
 .config(function ($stateProvider, $httpProvider, $urlRouterProvider) {
     $httpProvider.defaults.headers.post['Content-Type'] = "application/json";
 

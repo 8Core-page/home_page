@@ -12,7 +12,7 @@ angular.module('controller', [])
     $scope.hola = function (pancho) {
         console.log(pancho + ': ' + factory.panchoElTriste());
     }
-
+    $scope.navbarCollapsed = true;
     $scope.myInterval = 5000;
     $scope.noWrapSlides = false;
     $scope.active = 0;
@@ -32,5 +32,23 @@ angular.module('controller', [])
     for (var i = 0; i < 4; i++) {
         $scope.addSlide();
     }
+    /*------------------------ Carrousel Productos --------------------*/
+      $scope.theInterval = 3000;
+      $scope.isActive = 0;
+      currIndex = 0;
+      var photos = $scope.photos =[
+        {
+          image: 'http://lorempixel.com/400/200/'
+        },
+        {
+          image: 'http://lorempixel.com/400/200/food'
+        },
+        {
+          image: 'http://lorempixel.com/400/200/sports'
+        },
+        {
+          image: 'http://lorempixel.com/400/200/people'
+        }
+      ];
 
-});
+})

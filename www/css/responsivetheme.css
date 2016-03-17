@@ -1,0 +1,43 @@
+/* Estilos responsivos para cada tipo de pantalla
+================================================== */
+/* Dispositivos grandes, pantalla completa */
+@media (min-width : 1200px) {
+
+  .navbar-nav
+  {
+    padding-right: 150px;
+  }
+}
+/* Dispositivos medios, escritorios pequeños*/
+@media (min-width : 992px) {
+
+
+}
+
+/* Small Devices, Tablets */
+@media (min-width : 768px) and (max-width: 991px) {
+
+  .navbar-header{
+  		width: 20%;
+  	}
+  	.navbar-brand {
+      	height: 48px;
+  	}
+  	ul.navbar-nav a {
+  	    padding: 0px 0px 0px 5px;
+  	}
+
+}
+/* Dispositivos pequeños */
+@media (max-width : 769px){
+
+  /*header*/
+    .navbar-brand img {
+  	    height: 45px;
+  	}
+    ul.navbar-nav a {
+  	    padding: 0px 0px 0px 0px;
+  	}
+
+
+}

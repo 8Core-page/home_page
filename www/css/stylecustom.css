@@ -11,26 +11,50 @@ body {
     font-weight: 300;
     overflow-x: hidden;
 }
+ol,ul,dl{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+a{
+    text-decoration: none!important;
+}
 /* navegacion
 ================================================ */
 
-.navbar-default {
+
+.navbar-default{
+    width: auto;
+}
+
+.navbar-default header-fixed{
     background: #fff;
-    border-color: transparent;
-    padding: 10px 0;
-    -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+    padding: 10px 0px;
+}
+.navbar-default{
+  background:#fff;
+  border-color: transparent;
+  padding: 10px 0px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+}
+
+.navbar{
+    margin-bottom:0px;
+    -webkit-border-radius:0px;
+       -moz-border-radius:0px;
+            border-radius:0px;
 }
 .navbar-brand {
     padding: 5px 15px;
-    max-width: 220px;
-    font-size:40px;
+    max-width: 230px;
+    font-size: 40px;
     color: #222;
 }
 .navbar-brand img{
-  height: 200%;
+    height: 100%;
     width: auto;
-    vertical-align: top;
+    vertical-align: middle;
     max-width: 100%;
 }
 .navbar-default .navbar-nav>li>a {
@@ -40,13 +64,15 @@ body {
 .navbar-default .navbar-nav>li>a:hover {
     color: #24C0D9;
 }
+.navbar-nav
+{
+  padding-right: 80px;
+}
 ul.navbar-nav a {
     font-weight: 700;
-    font-size: 14px;
-    padding: 15px 0 15px 30px;
+    font-size: 20px;
+    padding: 0px 0px 0px 30px;
     line-height: 40px;
-    display: inline-block;
-    text-transform: uppercase;
 }
 .nav > li > a:focus {
    background: transparent!important;
@@ -58,6 +84,28 @@ ul.navbar-nav > .active > a{
 }
 
 
-
-/* HEADER
-================================================ */
+/* =================== Carousel productos============================= */
+#slides_control {
+  height: auto;
+  margin-top: 60px;
+}
+#slides_control > img{
+  margin:auto;
+  width: auto;
+}
+#slides_control {
+  position:relative;
+  width: 400px;
+  left:50%;
+  top:20px;
+ margin-left:-200px;
+}
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
