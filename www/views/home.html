@@ -54,17 +54,16 @@
     </nav>
     <!-- Barrita de navegacion chepecode -->
     <!--Inicio Productos by Chepecode -->
-
-        <div style="height: 500">
-            <uib-carousel active="activeP" interval="myIntervalP" no-wrap="noWrapSlidesP" no-transition="false">
-                <uib-slide ng-repeat="slide in slidesP track by slide.id" index="slide.id">
-                    <img ng-src="{{slide.image}}" style="margin:auto;" class="fill">
-                    <div class="carousel-caption">
-                        <h4>Slide {{$index+1}}</h4>
-                    </div>
-                </uib-slide>
-            </uib-carousel>
-        </div>
+    <div style="height: 500">
+        <uib-carousel active="activeP" interval="myIntervalP" no-wrap="noWrapSlidesP" no-transition="false">
+            <uib-slide ng-repeat="slide in slidesP track by slide.id" index="slide.id">
+                <img ng-src="{{slide.image}}" style="margin:auto;" class="fill">
+                <div class="carousel-caption">
+                    <h4>Slide {{$index+1}}</h4>
+                </div>
+            </uib-slide>
+        </uib-carousel>
+    </div>
 
     <!---Fin  Productos by Chepecode -->
     <!--Clientes by Keneth-->
@@ -77,31 +76,36 @@
             <br>
             <div class="row">
                 <div class="col-md-6">
-                    <img src="http://images.dailytech.com/nimage/G_is_For_Google_New_Logo_Thumb.png" alt="" class="image-rounded pull-xs-left" width="100" height="100">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/2000px-F_icon.svg.png" alt="" class="image-rounded pull-xs-left" width="100" height="100">
-                    <img src="http://icons.iconarchive.com/icons/limav/flat-gradient-social/256/Twitter-icon.png" alt="" class="image-rounded pull-xs-left" width="100" height="100">
-                    <img src="http://previews.123rf.com/images/didora/didora1409/didora140900543/32021099-abeja-de-la-miel-y-el-panal-de-miel-icono-de-dise-o-plano-Foto-de-archivo.jpg" alt="" class="image-rounded pull-xs-left" width="100" height="100">
-                    <img src="http://images.dailytech.com/nimage/G_is_For_Google_New_Logo_Thumb.png" alt="" class="image-rounded pull-xs-left" width="100" height="100">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/2000px-F_icon.svg.png" alt="" class="image-rounded pull-xs-left" width="100" height="100">
-                    <img src="http://icons.iconarchive.com/icons/limav/flat-gradient-social/256/Twitter-icon.png" alt="" class="image-rounded pull-xs-left" width="100" height="100">
-                    <img src="http://previews.123rf.com/images/didora/didora1409/didora140900543/32021099-abeja-de-la-miel-y-el-panal-de-miel-icono-de-dise-o-plano-Foto-de-archivo.jpg" width="100" height="100">
+                    <img ng-repeat="cliente in clientes" src="{{cliente.logo}}" alt="" class="image-rounded pull-xs-left" width="100" height="100">
                 </div>
+                <!--Carousel Testimonio-->
                 <div class="col-md-6">
-                    <div style="height: 305px">
-                        <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
-
+                    <div style="heigth:305px;">
+                        <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" no-transition="false">
                             <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
-                                <img ng-src="{{slide.image}}" style="margin:auto;">
-
-                                <div class="carousel-caption">
-                                    <h4>Slide {{slide.id}}</h4>
-                                    <p>{{slide.text}}</p>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object img-thumbnail" src="{{slide.foto}}" alt="{{slide.nombre}}">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <br>
+                                        <div class="col-md-10 col-sm-10 col-xs-12 text-left">
+                                            <blockquote class="blockquote-reverse">
+                                                <p>{{slide.cuerpo}}</p>
+                                                <footer><strong>{{slide.nombre}} </strong></footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
                                 </div>
                             </uib-slide>
                         </uib-carousel>
                     </div>
                 </div>
+                <!--Fin Carousel Testimonio-->
             </div>
         </div>
     </section>
+    <!--Fin Clientes by Keneth-->
 </main>
