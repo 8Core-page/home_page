@@ -66,47 +66,8 @@
     </div>
 
     <!---Fin  Productos by Chepecode -->
-    <!--Clientes by Keneth-->
-    <section>
-        <div class="container">
-            <br>
-            <br>
-            <br>
-            <H3 class="text-center">Nuestros Clientes</H3>
-            <br>
-            <div class="row">
-                <div class="col-md-6">
-                    <img ng-repeat="cliente in clientes" src="{{cliente.logo}}" alt="" class="image-rounded pull-xs-left" width="100" height="100">
-                </div>
-                <!--Carousel Testimonio-->
-                <div class="col-md-6">
-                    <div style="heigth:305px;">
-                        <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" no-transition="false">
-                            <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <a href="#">
-                                            <img class="media-object img-thumbnail" src="{{slide.foto}}" alt="{{slide.nombre}}">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <br>
-                                        <div class="col-md-10 col-sm-10 col-xs-12 text-left">
-                                            <blockquote class="blockquote-reverse">
-                                                <p>{{slide.cuerpo}}</p>
-                                                <footer><strong>{{slide.nombre}} </strong></footer>
-                                            </blockquote>
-                                        </div>
-                                    </div>
-                                </div>
-                            </uib-slide>
-                        </uib-carousel>
-                    </div>
-                </div>
-                <!--Fin Carousel Testimonio-->
-            </div>
-        </div>
-    </section>
-    <!--Fin Clientes by Keneth-->
+    <!--Clientes-->
+        <div ng-include="'views/clientes.html'"></div>
+    <!--Fin Clientes-->
     <div ng-include="'views/our.html'"></div>
 </main>
