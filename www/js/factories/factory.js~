@@ -31,7 +31,7 @@ angular.module('factories', [])
     var arraySkills = [
         {
             name: 'Android',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tincidunt modales odio vel malesuada interdum donec ac consectetur neque2.',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tincidunt modales odio vel malesuada interdum donec ac consectetur neque.',
             icon: 'https://cdn1.iconfinder.com/data/icons/simple-icons/4096/android-4096-black.png'
         },
         {
