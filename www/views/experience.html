@@ -1,0 +1,35 @@
+<section ng-controller='experienceCtrl'>
+  <div class="container">
+    <H3 class="text-center">Nuestra Experiencia</H3>
+    <br>
+    <div class="row">
+      <!-- Inicio tabs-->
+      <div class="col-md-6" ng-controller='experienceCtrl'>
+        <uib-tabset active="active">
+
+          <uib-tab ng-repeat=" skill in skills" heading={{skill.name}}>
+            <br>
+            <div class="row">
+              <div class="col-md-1">
+                <img class="icon" ng-src="{{ skill.icon }}" height="100 px" width="100 px">
+              </div>
+              <div class="col-md-2"></div>
+              <div class="col-md-8">{{skill.description}}</div>
+            </div>
+          </uib-tab>
+
+        </uib-tabset>
+      </div>
+      <!-- Fin tabs-->
+      <!--ProgressBar-->
+      <div class="col-md-6 vertical-center ">
+        <div ng-repeat=" skillPorcent in skillsPorcent">
+          <small><em class="pull-right"> {{skillPorcent.value}} %</em></small>
+          <small><em> {{skillPorcent.name}} </em></small>
+          <uib-progressbar value="skillPorcent.value" class="progress-striped active" type="info" max="100">{{skillPorcent.value}}</uib-progressbar>
+        </div>
+      </div>
+      <!--Fin ProgressBar-->
+    </div>
+  </div>
+</section>

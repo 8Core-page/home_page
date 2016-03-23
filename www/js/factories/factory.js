@@ -28,7 +28,37 @@ angular.module('factories', [])
             apellido: 'Vivas'
         }
     ];
-
+    var arraySkills = [
+        {
+            name: 'Android',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tincidunt modales odio vel malesuada interdum donec ac consectetur neque.',
+            icon: 'https://cdn1.iconfinder.com/data/icons/simple-icons/4096/android-4096-black.png'
+        },
+        {
+          name: 'MEAN.IO',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tincidunt modales odio vel malesuada interdum donec ac consectetur neque.',
+          icon: 'http://fullstacktutorials.net/wp-content/uploads/2015/11/mean3.png'
+        },
+        {
+          name: 'IT',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tincidunt modales odio vel malesuada interdum donec ac consectetur neque.',
+          icon: 'http://edelitconsult.com/wp-content/uploads/2013/12/it-consulting-solutions-w600h400.jpg'
+        }
+    ];
+    var arraySkillsPorcent = [
+        {
+            name: 'Android',
+            value: 50
+        },
+        {
+          name: 'MEAN.IO',
+          value: 50
+        },
+        {
+          name: 'IT',
+          value: 50
+        }
+    ];
     var clientes = [
         {
             nombre: 'Miel Estrada',
@@ -97,6 +127,11 @@ angular.module('factories', [])
     comun.getTestimonios = function () {
         return testimonios;
     }
-
+    comun.getSkills = function () {
+        return arraySkills;
+    }
+    comun.getSkillsPorcent = function () {
+        return arraySkillsPorcent;
+    }
     return comun
 });

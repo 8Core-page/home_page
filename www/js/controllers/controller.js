@@ -68,3 +68,8 @@ angular.module('controller', [])
     }
 
 })
+
+.controller('experienceCtrl', function ($scope, $state,factory) {
+  $scope.skills = factory.getSkills();
+  $scope.skillsPorcent = factory.getSkillsPorcent();
+})

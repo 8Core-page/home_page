@@ -1,6 +1,6 @@
 <main>
-    <!-- Barrita de navegacion chepecode -->
-    <!--  <header>
+  <!-- Barrita de navegacion chepecode -->
+  <!--  <header>
         <div class="navbar-wrapper">
             <div class="container">
                 <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="top-nav">
@@ -29,45 +29,48 @@
         </div>
     </header>-->
 
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" ng-click="navbarCollapsed = !navbarCollapsed">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" /></a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" uib-collapse="navbarCollapsed">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#products">Productos</a></li>
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#aboutus"> About Us</a></li>
-                <li><a href="#contacttus">Contacto</a></li>
-                <li><a href="#clients">Clientes</a></li>
-            </ul>
-        </div>
-    </nav>
-    <!-- Barrita de navegacion chepecode -->
-    <!--Inicio Productos by Chepecode -->
-    <div style="height: 500">
-        <uib-carousel active="activeP" interval="myIntervalP" no-wrap="noWrapSlidesP" no-transition="false">
-            <uib-slide ng-repeat="slide in slidesP track by slide.id" index="slide.id">
-                <img ng-src="{{slide.image}}" style="margin:auto;" class="fill">
-                <div class="carousel-caption">
-                    <h4>Slide {{$index+1}}</h4>
-                </div>
-            </uib-slide>
-        </uib-carousel>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" ng-click="navbarCollapsed = !navbarCollapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" /></a>
     </div>
 
-    <!---Fin  Productos by Chepecode -->
-    <!--Clientes-->
-        <div ng-include="'views/clientes.html'"></div>
-    <!--Fin Clientes-->
-    <div ng-include="'views/our.html'"></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" uib-collapse="navbarCollapsed">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#products">Productos</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#aboutus"> About Us</a></li>
+        <li><a href="#contacttus">Contacto</a></li>
+        <li><a href="#clients">Clientes</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Barrita de navegacion chepecode -->
+  <!--Inicio Productos by Chepecode -->
+  <div style="height: 500">
+    <uib-carousel active="activeP" interval="myIntervalP" no-wrap="noWrapSlidesP" no-transition="false">
+      <uib-slide ng-repeat="slide in slidesP track by slide.id" index="slide.id">
+        <img ng-src="{{slide.image}}" style="margin:auto;" class="fill">
+        <div class="carousel-caption">
+          <h4>Slide {{$index+1}}</h4>
+        </div>
+      </uib-slide>
+    </uib-carousel>
+  </div>
+
+  <!---Fin  Productos by Chepecode -->
+  <!--Clientes-->
+  <div ng-include="'views/clientes.html'"></div>
+  <!--Fin Clientes-->
+  <div ng-include="'views/our.html'"></div>
+  <!--experiencia-->
+  <div ng-include="'views/experience.html'"></div>
+  <!--Fin experiencia-->
 </main>
