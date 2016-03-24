@@ -54,9 +54,9 @@ angular.module('controller', [])
     var currIndexP = 0;
 
     $scope.addSlideP = function () {
-        var newWidthP = 600 + slidesP.length + 1;
+        var newWidthP = currIndexP + 1;//600 + slidesP.length + 1;
         slidesP.push({
-            image: 'http://lorempixel.com/' + newWidthP + '/300',
+            image: '../www/images/banner/banner' + newWidthP+'.png',
             text: ['Nice image', 'Awesome photograph', 'That is so cool', 'I love that'][slidesP.length % 4],
             id: currIndexP++
         });

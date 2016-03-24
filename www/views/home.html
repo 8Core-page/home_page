@@ -1,33 +1,5 @@
 <main>
   <!-- Barrita de navegacion chepecode -->
-  <!--  <header>
-        <div class="navbar-wrapper">
-            <div class="container">
-                <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="top-nav">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <a class="navbar-brand" href="#home"><img src="images/logo.png" alt="logo" /></a>
-
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
-                        <div class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav navbar-right scroll">
-                                <li><a href="#aboutus"> About Us</a></li>
-                                <li><a href="#contacttus">Contacto</a></li>
-                                <li><a href="#clients">Clientes</a></li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>-->
 
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -54,16 +26,16 @@
   </nav>
   <!-- Barrita de navegacion chepecode -->
   <!--Inicio Productos by Chepecode -->
-  <div style="height: 500">
-    <uib-carousel active="activeP" interval="myIntervalP" no-wrap="noWrapSlidesP" no-transition="false">
-      <uib-slide ng-repeat="slide in slidesP track by slide.id" index="slide.id">
-        <img ng-src="{{slide.image}}" style="margin:auto;" class="fill">
-        <div class="carousel-caption">
-          <h4>Slide {{$index+1}}</h4>
-        </div>
-      </uib-slide>
-    </uib-carousel>
-  </div>
+  <section>
+      <uib-carousel active="activeP" interval="myIntervalP" no-wrap="noWrapSlidesP" no-transition="false">
+          <uib-slide ng-repeat="slide in slidesP track by slide.id" index="slide.id" id="slides_control">
+              <img ng-src="{{slide.image}}" style="margin:auto;" class="img-responsive">
+              <div class="carousel-caption">
+                  <h5>Slide {{$index+1}}</h5>
+              </div>
+          </uib-slide>
+      </uib-carousel>
+  </section>
 
   <!---Fin  Productos by Chepecode -->
   <!--Clientes-->

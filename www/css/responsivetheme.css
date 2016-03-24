@@ -10,7 +10,9 @@
 }
 /* Dispositivos medios, escritorios pequeños*/
 @media (min-width : 992px) {
-
+      body {
+        padding-top: 75px;
+      }
 
 }
 
@@ -26,6 +28,10 @@
   	ul.navbar-nav a {
   	    padding: 0px 0px 0px 5px;
   	}
+    body {
+      padding-top: 70px;
+    }
+
 
 }
 /* Dispositivos pequeños */
@@ -36,8 +42,7 @@
   	    height: 45px;
   	}
     ul.navbar-nav a {
-  	    padding: 0px 0px 0px 0px;
+  	    padding: 5px 0px 0px 0px;
   	}
-
 
 }
