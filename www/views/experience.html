@@ -1,12 +1,10 @@
 <section ng-controller='experienceCtrl'>
   <div class="container">
     <H3 class="text-center">Nuestra Experiencia</H3>
-    <br>
     <div class="row">
       <!-- Inicio tabs-->
-      <div class="col-md-6" ng-controller='experienceCtrl'>
-        <uib-tabset active="active">
-
+      <div class="col-md-6">
+        <uib-tabset active="active" justified="true">
           <uib-tab ng-repeat=" skill in skills" heading={{skill.name}}>
             <br>
             <div class="row">
@@ -19,10 +17,11 @@
           </uib-tab>
 
         </uib-tabset>
+
       </div>
       <!-- Fin tabs-->
       <!--ProgressBar-->
-      <div class="col-md-6 vertical-center ">
+      <div class="col-md-6">
         <div ng-repeat=" skillPorcent in skillsPorcent">
           <small><em class="pull-right"> {{skillPorcent.value}} %</em></small>
           <small><em> {{skillPorcent.name}} </em></small>
