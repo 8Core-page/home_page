@@ -75,6 +75,9 @@ angular.module('factories', [])
     }, {
             nombre: 'Chaplist',
             logo: 'http://previews.123rf.com/images/didora/didora1409/didora140900543/32021099-abeja-de-la-miel-y-el-panal-de-miel-icono-de-dise-o-plano-Foto-de-archivo.jpg'
+    }, {
+            nombre: 'Chaplist',
+            logo: 'http://previews.123rf.com/images/didora/didora1409/didora140900543/32021099-abeja-de-la-miel-y-el-panal-de-miel-icono-de-dise-o-plano-Foto-de-archivo.jpg'
     }
                    ];
 
