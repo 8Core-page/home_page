@@ -21,4 +21,13 @@ $(document).ready(function() {
             }
         });
     });
+    //new WOW().init();
+    // Animate and WOW Animation
+      var wow = new WOW(
+          {
+              offset: 50,
+              live: true
+          }
+      );
+      wow.init();
   });

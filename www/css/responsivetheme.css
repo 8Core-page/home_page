@@ -37,12 +37,11 @@
 /* Dispositivos pequeños */
 @media (max-width : 769px){
 
-  /*header*/
-    .navbar-brand img {
-  	    height: 45px;
-  	}
-    ul.navbar-nav a {
-  	    padding: 5px 0px 0px 0px;
-  	}
+  body {padding-top: 60px;}
+  .navbar-default {height: 60px; }
+  .navbar-brand img {height: 30px;}
+  ul.navbar-nav a {padding: 5px 0px 0px 0px;}
+  .navbar-collapse{ background: #fff;}
+  #slides_control > img { height: 500px; }
 
 }
