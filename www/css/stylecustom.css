@@ -106,6 +106,7 @@ ul.navbar-nav > .active > a{
 .home-feature  img {
   width: 275px;
   height: 500px;
+   margin: 0 auto;
 }
 .icon-playdown {
     background-image: url("../images/playdown.png");

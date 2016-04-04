@@ -32,6 +32,25 @@
       padding-top: 70px;
     }
 
+/* -------------- Carousel Producto --------------------*/
+    .home-content p {
+      font-size: 20px;
+    }
+    .home-content h1 {
+      font-size: 30px;
+    }
+    .home-content button {
+        width: 80%;
+        padding-left: 30%;
+    }
+    .home-content button span{
+      display: none;
+    }
+    .home-feature  img {
+      width: 200px;
+      height: 400px;
+    }
+
 
 }
 /* Dispositivos pequeños */
@@ -42,6 +61,31 @@
   .navbar-brand img {height: 30px;}
   ul.navbar-nav a {padding: 5px 0px 0px 0px;}
   .navbar-collapse{ background: #fff;}
+
+  /* ---------------- Carousel Products ---------------*/
+
   #slides_control > img { height: 500px; }
+  .carousel-caption{
+      margin-bottom: 60px;
+  }
+  .home-feature  img {
+    width: 150px;
+    height: 250px;
+  }
+  .home-content p {
+     display: none;
+  }
+  .home-content h1 {
+     display: none;
+  }
+  .home-content button span{
+     display: none;
+  }
+  .home-content button {
+      width: 90%;
+      margin-top: 10px;
+  }
+
+
 
 }
