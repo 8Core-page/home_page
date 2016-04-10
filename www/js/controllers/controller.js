@@ -12,7 +12,6 @@ angular.module('controller', [])
     $scope.hola = function (pancho) {
         console.log(pancho + ': ' + factory.panchoElTriste());
     }
-
     /*
         Carrousel Testimonios
     */
@@ -54,22 +53,29 @@ angular.module('controller', [])
     var currIndexP = 0;
 
     $scope.addSlideP = function () {
-        var newWidthP = currIndexP + 1;//600 + slidesP.length + 1;
+        var newWidthP = currIndexP + 1; //600 + slidesP.length + 1;
         slidesP.push({
-            image: '../www/images/banner/banner' + newWidthP+'.png',
+            image: '../www/images/banner/banner' + newWidthP + '.png',
             text: ['Nice image', 'Awesome photograph', 'That is so cool', 'I love that'][slidesP.length % 4],
             id: currIndexP++
         });
     };
 
-
     for (var i = 0; i < 4; i++) {
         $scope.addSlideP();
     }
-
 })
 
-.controller('experienceCtrl', function ($scope, $state,factory) {
-  $scope.skills = factory.getSkills();
-  $scope.skillsPorcent = factory.getSkillsPorcent();
+.controller('experienceCtrl', function ($scope, $state, factory) {
+    $scope.skills = factory.getSkills();
+    $scope.skillsPorcent = factory.getSkillsPorcent();
+})
+
+.controller('contactCtrl',function ($scope, factoryBackend) {
+    $scope.success = false;
+    $scope.error = false;
+    $scope.user = {};
+    $scope.send = function () {
+        factoryBackend.sendToNodeMailer($scope.user);
+  }
 })
