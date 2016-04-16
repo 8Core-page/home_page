@@ -35,14 +35,14 @@ angular.module('factories', [])
             icon: 'https://cdn1.iconfinder.com/data/icons/simple-icons/4096/android-4096-black.png'
         },
         {
-          name: 'MEAN.IO',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tincidunt modales odio vel malesuada interdum donec ac consectetur neque.',
-          icon: 'http://fullstacktutorials.net/wp-content/uploads/2015/11/mean3.png'
+            name: 'MEAN.IO',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tincidunt modales odio vel malesuada interdum donec ac consectetur neque.',
+            icon: 'http://fullstacktutorials.net/wp-content/uploads/2015/11/mean3.png'
         },
         {
-          name: 'IT',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tincidunt modales odio vel malesuada interdum donec ac consectetur neque.',
-          icon: 'http://edelitconsult.com/wp-content/uploads/2013/12/it-consulting-solutions-w600h400.jpg'
+            name: 'IT',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tincidunt modales odio vel malesuada interdum donec ac consectetur neque.',
+            icon: 'http://edelitconsult.com/wp-content/uploads/2013/12/it-consulting-solutions-w600h400.jpg'
         }
     ];
     var arraySkillsPorcent = [
@@ -51,12 +51,12 @@ angular.module('factories', [])
             value: 50
         },
         {
-          name: 'MEAN.IO',
-          value: 50
+            name: 'MEAN.IO',
+            value: 50
         },
         {
-          name: 'IT',
-          value: 50
+            name: 'IT',
+            value: 50
         }
     ];
     var clientes = [
@@ -137,4 +137,20 @@ angular.module('factories', [])
         return arraySkillsPorcent;
     }
     return comun
+})
+
+.factory('factoryBackend', function ($http) {
+    var comun = {};
+
+    comun.sendToNodeMailer = function (body) {
+        return $http.post('http://localhost:3000/email', body)
+            .then(function (res) {
+                alert('Email enviado:');
+                return res;
+            }, function (err) {
+                alert('Error al enviar email');
+                return err;
+            });
+    }
+    return comun;
 });
