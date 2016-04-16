@@ -8,6 +8,7 @@
     padding-right: 150px;
   }
 }
+
 /* Dispositivos medios, escritorios pequeños*/
 @media (min-width : 992px) {
       body {
@@ -15,7 +16,32 @@
       }
 
 }
-
+@media (max-with : 900px){
+  .tutosite {
+    margin-top: 90px;
+  }
+  .tutosite h1 {
+    font: 35px/1.2em 'montserrat-bold', sans-serif;
+    padding: 0 8%;
+  }
+  .tutosite p {
+    font: 16px/30px 'montserrat-regular', sans-serif;
+    padding: 0 10%;
+  }
+  .tutosite h5 {
+    font: 13px/24px 'montserrat-bold', sans-serif;
+    color: #1F782F;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .7);
+  }
+  .tutosite #counter {
+    width: 80%;
+  }
+  .tutosite #counter span {
+    font: 58px/1em 'merriweather-bold', serif;
+  }
+}
 /* Small Devices, Tablets */
 @media (min-width : 768px) and (max-width: 991px) {
 
