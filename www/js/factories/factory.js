@@ -2,6 +2,20 @@ angular.module('factories', [])
 
 .factory('factory', function () {
     var comun = {};
+    var arrayProducts = [
+        {
+          dirWeb: '\'views/products/chaplist.html\''
+        },
+        {
+          dirWeb: '\'views/products/tutosite.html\''
+        },
+        {
+          dirWeb: '\'views/products/chaplist.html\''
+        },
+        {
+          dirWeb: '\'views/products/chaplist.html\''
+        }
+      ];
     var array = [
         {
             nombre: 'Jose',
@@ -135,6 +149,9 @@ angular.module('factories', [])
     }
     comun.getSkillsPorcent = function () {
         return arraySkillsPorcent;
+    }
+    comun.getArrayProducts = function () {
+        return arrayProducts;
     }
     return comun
 })
