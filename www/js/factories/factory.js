@@ -143,7 +143,7 @@ angular.module('factories', [])
     var comun = {};
 
     comun.sendToNodeMailer = function (body) {
-        return $http.post('http://localhost:3000/email', body)
+        return $http.post('http://oktacore.com/email', body)
             .then(function (res) {
                 alert('Email enviado:');
                 return res;
