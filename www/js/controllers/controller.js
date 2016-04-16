@@ -52,14 +52,14 @@ angular.module('controller', [])
     var slidesP = $scope.slidesP = [];
     var currIndexP = 0;
 
-    $scope.addSlideP = function (dirWeb) {
+    $scope.addSlideP = function (dirWebItem) {
         var newWidthP = currIndexP + 1; //600 + slidesP.length + 1;
 
         slidesP.push({
             image: 'images/banner/banner' + newWidthP + '.png',
             text: ['Nice image', 'Awesome photograph', 'That is so cool', 'I love that'][slidesP.length % 4],
             id: currIndexP++,
-            dirWeb: dirWeb
+            dirWeb: dirWebItem.dirWeb
         });
     };
 
