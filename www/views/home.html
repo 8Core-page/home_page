@@ -15,17 +15,17 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" uib-collapse="navbarCollapsed">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#products">Productos</a></li>
-        <li><a href="#services">Servicios</a></li>
-        <li><a href="#aboutus"> About Us</a></li>
-        <li><a href="#contacttus">Contacto</a></li>
-        <li><a href="#clients">Clientes</a></li>
+        <li><a href="" ng-click="gotoAnchor(1)" >Productos</a></li>
+        <li><a href="" ng-click="gotoAnchor(2)"> Clientes</a></li>
+        <li><a href="" ng-click="gotoAnchor(3)"> About Us</a></li>
+        <li><a href="" ng-click="gotoAnchor(4)" > Servicios</a></li>
+        <li><a href="" ng-click="gotoAnchor(5)" >Contacto</a></li>
       </ul>
     </div>
   </nav>
   <!-- Barrita de navegacion chepecode -->
   <!--Inicio Productos by Chepecode -->
-  <section id="productsCar">
+  <section id="homeSec1">
       <uib-carousel active="activeP" interval="myIntervalP" no-wrap="noWrapSlidesP" no-transition="false">
           <uib-slide ng-repeat="slide in slidesP track by slide.id" index="slide.id" id="slides_control">
 

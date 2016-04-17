@@ -1,17 +1,35 @@
-angular.module('controller', [])
 
+angular.module('controller', [])
+.run(['$anchorScroll', function($anchorScroll) {
+  $anchorScroll.yOffset = 50;   // always scroll by 50 extra pixels
+}])
 .controller('appCtrl', function ($scope, $state) {
 
 })
 
-.controller('homeCtrl', function ($scope, $state, factory) {
+
+.controller('homeCtrl', function ($scope, $state, factory,$anchorScroll,$location) {
     $scope.arrayMembers = [];
+
 
     $scope.arrayMembers = factory.getMembers();
 
     $scope.hola = function (pancho) {
         console.log(pancho + ': ' + factory.panchoElTriste());
     }
+    /* NavScroll*/
+    $scope.gotoAnchor = function(x) {
+      var newHash = 'homeSec' + x;
+      if ($location.hash() !== newHash) {
+        // set the $location.hash to `newHash` and
+        // $anchorScroll will automatically scroll to it
+        $location.hash('homeSec' + x);
+      } else {
+        // call $anchorScroll() explicitly,
+        // since $location.hash hasn't changed
+        $anchorScroll();
+      }
+    };
     /*
         Carrousel Testimonios
     */
