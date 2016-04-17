@@ -28,10 +28,8 @@
   <section id="homeSec1">
       <uib-carousel active="activeP" interval="myIntervalP" no-wrap="noWrapSlidesP" no-transition="false">
           <uib-slide ng-repeat="slide in slidesP track by slide.id" index="slide.id" id="slides_control">
-
             <img ng-src="{{slide.image}}" style="margin:auto;" class="img-responsive">
             <div class="carousel-caption">
-              <div class="row">
                 <div ng-include = "slide.dirWeb"></div>
                 <!--
                 <div class="col-md-6 col-sm-6 col-xs-12 pull-right">
@@ -48,7 +46,7 @@
                         </button>
                     </div>
                 </div>-->
-              </div>
+
             <!--  <h5>Slide {{$index+1}}</h5>-->
             </div>
           </uib-slide>
@@ -69,6 +67,6 @@
   <!--contáctanos-->
   <div ng-include="'views/contactUs.html'"></div>
   <!-- Fin contáctanos-->
-    <div ng-include="'views/footerSection.html'"></div>
+  <!--  <div ng-include="'views/footerSection.html'"></div>-->
   <!--Fin contáctanos-->
 </main>

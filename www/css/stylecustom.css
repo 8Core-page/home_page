@@ -174,6 +174,10 @@ ul.navbar-nav > .active > a{
     background-position: 50% 50%;
     background-size: cover;
 }
+/* ================== Contactus ==========================*/
+#contact form {
+  margin-bottom: 50px;
+}
 /* ------------------- Footer --------------------------------*/
 
 .footer-distributed{
