@@ -1,41 +1,12 @@
 /* Estilos responsivos para cada tipo de pantalla
 ================================================== */
 /* Dispositivos grandes, pantalla completa */
-@media (min-width : 1200px) {
-
-  .navbar-nav
-  {
-    padding-right: 150px;
-  }
-}
-
-/* Dispositivos medios, escritorios pequeños*/
-@media (min-width : 992px) {
+/*
+@media (max-width : 992px) {
       body {
         padding-top: 75px;
       }
-
-}
-@media (max-width: 880px) {
-  
-	.footer-distributed{
-		font: bold 14px sans-serif;
-	}
-
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
-
-	.footer-distributed .footer-center i{
-		margin-left: 0;
-	}
-
-}
+}*/
 @media (max-with : 900px){
   .tutosite {
     margin-top: 90px;
@@ -62,6 +33,73 @@
     font: 58px/1em 'merriweather-bold', serif;
   }
 }
+@media (max-width: 880px) {
+
+  /* Footer resize */
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+@media (min-width : 1200px) and (max-width: 1400px) {
+  .navbar-nav
+  {
+    padding-right: 150px;
+  }
+  /* -------------- ChapList ---------------*/
+  .home-content p {
+    font-size: 25px;
+  }
+  .home-content h1 {
+    font-size: 35px;
+  }
+  .home-content a {
+      width: 80%;
+  }
+  .home-content a span{
+    display: none;
+  }
+  .home-feature  img {
+    width: 300px;
+    height: 500px;
+  }
+}
+
+@media (min-width : 991px) and (max-width: 1200px) {
+  .navbar-nav
+  {
+    padding-right: 150px;
+  }
+  /* ------------ ChapList -----------*/
+  .home-content p {
+    font-size: 23px;
+  }
+  .home-content h1 {
+    font-size: 30px;
+  }
+  .home-content a {
+      width: 75%;
+      padding-left:25%;
+  }
+  .home-content a span{
+    display: none;
+  }
+  .home-feature img {
+    width: 500px;
+    height: 450px;
+  }
+}
 /* Small Devices, Tablets */
 @media (min-width : 768px) and (max-width: 991px) {
 
@@ -85,11 +123,11 @@
     .home-content h1 {
       font-size: 30px;
     }
-    .home-content button {
+    .home-content a {
         width: 80%;
         padding-left: 30%;
     }
-    .home-content button span{
+    .home-content a span{
       display: none;
     }
     .home-feature  img {
@@ -124,14 +162,11 @@
   .home-content h1 {
      display: none;
   }
-  .home-content button span{
+  .home-content a span{
      display: none;
   }
-  .home-content button {
-      width: 90%;
+  .home-content a {
+      width: 70%;
       margin-top: 10px;
   }
-
-
-
 }
