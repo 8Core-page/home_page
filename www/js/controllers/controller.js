@@ -86,11 +86,23 @@ angular.module('controller', [])
       var prodLive = factory.getArrayProducts();
         $scope.addSlideP(prodLive[i]);
     }
+    /*----------- Experience -------------*/
+    $scope.skills = factory.getSkills();
+    $scope.skillsPorcent = factory.getSkillsPorcent();
+    /*------------ Contact ----------------*/
+    $scope.success = false;
+    $scope.error = false;
+    $scope.user = {};
+    $scope.send = function () {
+        factoryBackend.sendToNodeMailer($scope.user);
+  }
+    
 })
-
+/*
 .controller('experienceCtrl', function ($scope, $state, factory) {
     $scope.skills = factory.getSkills();
     $scope.skillsPorcent = factory.getSkillsPorcent();
+    
 })
 
 .controller('contactCtrl',function ($scope, factoryBackend) {
@@ -100,4 +112,4 @@ angular.module('controller', [])
     $scope.send = function () {
         factoryBackend.sendToNodeMailer($scope.user);
   }
-})
+})*/
