@@ -1,6 +1,6 @@
 <section ng-controller='experienceCtrl' id="experienciaSec">
   <div class="container">
-    <H3 class="text-center">Nuestra Experiencia</H3>
+    <H3 class="text-center"><font color="white">Nuestra Experiencia</font></H3>
     <div class="row">
       <!-- Inicio tabs-->
       <div class="col-md-6">
@@ -12,7 +12,7 @@
                 <img class="icon" ng-src="{{ skill.icon }}" height="100 px" width="100 px">
               </div>
               <div class="col-md-2"></div>
-              <div class="col-md-8">{{skill.description}}</div>
+              <div class="col-md-8"><font color="white">{{skill.description}}</font></div>
             </div>
           </uib-tab>
 
@@ -23,8 +23,8 @@
       <!--ProgressBar-->
       <div class="col-md-6">
         <div ng-repeat=" skillPorcent in skillsPorcent">
-          <small><em class="pull-right"> {{skillPorcent.value}} %</em></small>
-          <small><em> {{skillPorcent.name}} </em></small>
+            <font color="white"><small><em class="pull-right"> {{skillPorcent.value}} %</em></small></font>
+            <font color="white"><small><em> {{skillPorcent.name}} </em></small></font>
           <uib-progressbar value="skillPorcent.value" class="progress-striped active" type="info" max="100">{{skillPorcent.value}}</uib-progressbar>
         </div>
       </div>

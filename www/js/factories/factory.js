@@ -44,32 +44,32 @@ angular.module('factories', [])
     var arraySkills = [
         {
             name: 'Android',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, tsed do eiusmod tincidunt modales odio vel malesuada interdum donec ac consectetur neque2.',
+            description: 'Desarrollamos Apps hibridas y nativas con la mas reciente tecnologia de desarrollo y diseño.',
             icon: 'https://cdn1.iconfinder.com/data/icons/simple-icons/4096/android-4096-black.png'
         },
         {
-            name: 'MEAN.IO',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tincidunt modales odio vel malesuada interdum donec ac consectetur neque.',
-            icon: 'http://fullstacktutorials.net/wp-content/uploads/2015/11/mean3.png'
+            name: 'SailsJS',
+            description: 'Utilizamos Frameworks para desarrollar las soluciones. Esto nos permite dar una solucion integral y optima.',
+            icon: 'https://cdn.tutsplus.com/net/uploads/2013/06/sails-preview-400-2.jpg'
         },
         {
             name: 'IT',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tincidunt modales odio vel malesuada interdum donec ac consectetur neque.',
+            description: 'Presatmos servico de la tecnologia de la informacion para mantener su empresa al dia y al ritmo del cambio tecnologico.',
             icon: 'http://edelitconsult.com/wp-content/uploads/2013/12/it-consulting-solutions-w600h400.jpg'
         }
     ];
     var arraySkillsPorcent = [
         {
             name: 'Android',
-            value: 50
+            value: 80
         },
         {
-            name: 'MEAN.IO',
-            value: 50
+            name: 'SailsJS',
+            value: 70
         },
         {
             name: 'IT',
-            value: 50
+            value: 90
         }
     ];
     var clientes = [
@@ -98,8 +98,8 @@ angular.module('factories', [])
         {
             color: '#E1BEE7',
             nombre: 'Jose Estrada',
-            foto: 'https://s3.amazonaws.com/uifaces/faces/twitter/mantia/128.jpg',
-            cuerpo: 'Muy Buena experiencia, es exelente, adios mucho mgusto',
+            foto: 'images/Jose.png',
+            cuerpo: 'Muy Buena experiencia, es exelente, adios mucho gusto',
             id: ''
     }, {
             color: '##B2DFDB',
@@ -110,19 +110,19 @@ angular.module('factories', [])
     }, {
             color: '#BBDEFB',
             nombre: 'Jeyson Montenegro',
-            foto: 'https://s3.amazonaws.com/uifaces/faces/twitter/mantia/128.jpg',
+            foto: 'images/Jeyson.png',
             cuerpo: 'Muy Buen trabajo departe de los muchachos!',
             id: ''
     }, {
             color: '#F0F4C3',
             nombre: 'Jeremias Ortega',
-            foto: 'https://s3.amazonaws.com/uifaces/faces/twitter/mantia/128.jpg',
-            cuerpo: 'Exelente!!!!!!!',
+            foto: 'images/Jeremias.png',
+            cuerpo: 'Excelente!!!!!!!',
             id: ''
     }, {
             color: '#FFE0B2',
             nombre: 'Francisco Ardon',
-            foto: 'https://s3.amazonaws.com/uifaces/faces/twitter/mantia/128.jpg',
+            foto: 'images/Francisco.png',
             cuerpo: 'Generando buenas ideas!!!!',
             id: ''
     }
