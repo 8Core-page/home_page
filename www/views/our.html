@@ -16,79 +16,21 @@
     <h3 class="text-center  wowload fadeInUp">Nuestro equipo</h3>
     <p class="text-center  wowload fadeInLeft">Oktacore Team</p>
     <div class="row grid team  wowload fadeInUpBig animated">
+
+      <div ng-repeat="item in slides">
         <div class=" col-sm-4 col-xs-4 col-md-2">
             <figure class="effect-chico">
-                <img src="images/Jose.png" alt="img01" class="img-responsive" />
+                <img src="{{item.foto}}" alt="img01" class="img-responsive" />
                 <figcaption>
-                    <p><b>Jose Estrada</b>
-                        <br>Desarrollador
+                    <p><b>{{item.nombre}}</b>
+                        <br>{{item.puesto}}
                         <br>
-                        <br><a href="#"><i class="fa fa-dribbble"></i></a> <a href="https://www.facebook.com/esvin.jose.estrada"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a></p>
+                        <br><a href="#"><i class="fa fa-dribbble"></i></a> <a href="{{item.linked}}"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a></p>
                 </figcaption>
             </figure>
         </div>
+      </div>
 
-        <div class=" col-sm-4 col-xs-4 col-md-2" >
-            <figure class="effect-chico">
-                <img src="images/Jeyson.png" alt="img01" />
-                <figcaption>
-                    <p><b>Jeyson Montenegro</b>
-                        <br>Desarrollador
-                        <br>
-                        <br><a href="#"><i class="fa fa-dribbble"></i></a> <a href="https://www.facebook.com/MrJeyson"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a></p>
-                </figcaption>
-            </figure>
-        </div>
-
-        <div class=" col-sm-4 col-xs-4 col-md-2">
-            <figure class="effect-chico">
-                <img src="images/Jeremias.png" alt="img01" />
-                <figcaption>
-                    <p><b>Jeremias Ortega</b>
-                        <br>Desarrollador
-                        <br>
-                        <br><a href="#"><i class="fa fa-dribbble"></i></a> <a href="http://facebook.com/momero2424"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a></p>
-                </figcaption>
-            </figure>
-        </div>
-
-        <div class=" col-sm-4 col-xs-4 col-md-2">
-            <figure class="effect-chico">
-                <img src="images/Francisco.png" alt="img01" />
-                <figcaption>
-                    <p><b>Francisco René</b>
-                        <br>Desarrollador
-                        <br>
-                        <br><a href="#"><i class="fa fa-dribbble"></i></a> <a href="https://www.facebook.com/franciscorene.ardonguerra"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a></p>
-                </figcaption>
-            </figure>
-        </div>
-
-
-
-        <div class=" col-sm-4 col-xs-4 col-md-2">
-            <figure class="effect-chico">
-                <img src="images/Keneth.png" alt="img01" />
-                <figcaption>
-                    <p><b>Keneth Ubeda</b>
-                        <br>Desarrollador
-                        <br>
-                        <br><a href="#"><i class="fa fa-dribbble"></i></a> <a href="https://www.facebook.com/Oktacore-1716102948605156"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a></p>
-                </figcaption>
-            </figure>
-        </div>
-
-        <div class=" col-sm-4 col-xs-4 col-md-2">
-            <figure class="effect-chico">
-                <img src="https://yt3.ggpht.com/-SnGuBQR3Dt0/AAAAAAAAAAI/AAAAAAAAAAA/0Rk1XvDEjUM/s100-c-k-no/photo.jpg" alt="img01" />
-                <figcaption>
-                    <p><b>TAmy Vivas</b>
-                        <br>Desarrollador
-                        <br>
-                        <br><a href="#"><i class="fa fa-dribbble"></i></a> <a href="https://www.facebook.com/tamyg.vivas"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a></p>
-                </figcaption>
-            </figure>
-        </div>
     </div>
     <!-- team -->
 </div>

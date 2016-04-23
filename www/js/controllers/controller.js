@@ -43,10 +43,11 @@ angular.module('controller', [])
 
     for (var i = 0; i < testimonios.length; i++) {
         slides.push({
-            color: testimonios[i].color,
             nombre: testimonios[i].nombre,
             foto: testimonios[i].foto,
             cuerpo: testimonios[i].cuerpo,
+            puesto: testimonios[i].puesto,
+            linked: testimonios[i].linked,
             id: currIndex++
         });
     }
@@ -96,13 +97,13 @@ angular.module('controller', [])
     $scope.send = function () {
         factoryBackend.sendToNodeMailer($scope.user);
   }
-    
+
 })
 /*
 .controller('experienceCtrl', function ($scope, $state, factory) {
     $scope.skills = factory.getSkills();
     $scope.skillsPorcent = factory.getSkillsPorcent();
-    
+
 })
 
 .controller('contactCtrl',function ($scope, factoryBackend) {

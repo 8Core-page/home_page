@@ -84,37 +84,51 @@ angular.module('factories', [])
 
     var testimonios = [
         {
-            color: '#E1BEE7',
             nombre: 'Jose Estrada',
+            puesto: 'Desarrollador',
             foto: 'images/Jose.png',
+            linked: 'https://www.facebook.com/esvin.jose.estrada',
             cuerpo: 'Muy Buena experiencia, es exelente, adios mucho gusto',
             id: ''
     }, {
-            color: '##B2DFDB',
             nombre: 'TAmy Vivas',
-            foto: 'https://s3.amazonaws.com/uifaces/faces/twitter/mantia/128.jpg',
+            puesto: 'Desarrollador',
+            linked: 'https://www.facebook.com/tamyg.vivas',
+            foto: 'https://yt3.ggpht.com/-SnGuBQR3Dt0/AAAAAAAAAAI/AAAAAAAAAAA/0Rk1XvDEjUM/s100-c-k-no/photo.jpg',
             cuerpo: 'Muy Buena experiencia, me parecen exelentes apps',
             id: ''
     }, {
-            color: '#BBDEFB',
             nombre: 'Jeyson Montenegro',
+            puesto: 'Desarrollador',
+            linked: 'https://www.facebook.com/MrJeyson',
             foto: 'images/Jeyson.png',
             cuerpo: 'Muy Buen trabajo departe de los muchachos!',
             id: ''
     }, {
-            color: '#F0F4C3',
             nombre: 'Jeremias Ortega',
+            puesto: 'Desarrollador',
+            linked: 'http://facebook.com/momero2424',
             foto: 'images/Jeremias.png',
             cuerpo: 'Excelente!!!!!!!',
             id: ''
     }, {
-            color: '#FFE0B2',
             nombre: 'Francisco Ardon',
+            puesto: 'Desarrollador',
+            linked: 'https://www.facebook.com/franciscorene.ardonguerra',
             foto: 'images/Francisco.png',
             cuerpo: 'Generando buenas ideas!!!!',
             id: ''
-    }
-                      ];
+    }, {
+            nombre: 'Keneth Ubeda',
+            puesto: 'Desarrollador',
+            linked: '',
+            foto: 'images/Keneth.png',
+            cuerpo: 'Generando buenas ideas!!!!',
+            id: ''
+      }
+      ];
+
+
 
     comun.panchoElTriste = function () {
         return 'estoy triste';
