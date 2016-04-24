@@ -12,7 +12,7 @@ angular.module('factories', [])
           dirWeb: 'views/products/chaplist.html'
         },
         {
-          dirWeb: 'views/products/chaplist.html'
+          dirWeb: 'views/products/tutosite.html'
         }
       ];
     var array = [

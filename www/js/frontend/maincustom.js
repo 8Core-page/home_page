@@ -1,26 +1,17 @@
-/*jQuery(document).ready(function($) {
-
-   $(".scroll a, .navbar-brand, .gototop").click(function(event)
-   {
-   alert('Que pedo');
-   event.preventDefault();
-   $('html,body').animate({scrollTop:$(this.hash).offset().top}, 600,'swing');
-   $(".scroll li").removeClass('active');
-   $(this).parents('li').toggleClass('active');
-   });
- });*/
-/*
-$("#a").click(function() {
-   var offset = 20; //Offset of 20px
-
-   $('html, body').animate({
-       scrollTop: $("#clientesSec").offset().top + offset
-   }, 2000);
-});*/
-
 
 $(document).ready(function() {
-    "use-strict";
+    "use-strict";    
+    $('[data-countdown]').each(function() {
+		var $this = $(this), finalDate = $(this).data('countdown');
+			$this.countdown(finalDate, function(event) {
+			$this.html(event.strftime(
+				'<div>%D<span>days</span></div>' + 
+				'<div>%H<span>hours</span></div>' + 
+				'<div>%M<span>minutes</span></div>' +
+				'<div>%S<span>seconds</span></div>'
+			));
+		});
+	});
 
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({

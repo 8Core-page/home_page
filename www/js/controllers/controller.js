@@ -10,8 +10,7 @@ angular.module('controller', [])
 
 .controller('homeCtrl', function ($scope, $state, factory,$anchorScroll,$location) {
     $scope.arrayMembers = [];
-
-
+    $scope.timerRunning = true;
     $scope.arrayMembers = factory.getMembers();
 
     $scope.hola = function (pancho) {
