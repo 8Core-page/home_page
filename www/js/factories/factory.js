@@ -125,6 +125,20 @@ angular.module('factories', [])
             foto: 'images/Keneth.png',
             cuerpo: 'Generando buenas ideas!!!!',
             id: ''
+      }, {
+            nombre: 'Abel Gutierrez',
+            puesto: 'Desarrollador',
+            linked: '',
+            foto: 'images/Abel.jpg',
+            cuerpo: 'Generando buenas ideas!!!!',
+            id: ''
+      }, {
+            nombre: 'Fernando Samayoa',
+            puesto: 'Desarrollador',
+            linked: '',
+            foto: 'images/Fernando.jpg',
+            cuerpo: 'Generando buenas ideas!!!!',
+            id: ''
       }
       ];
 
