@@ -102,7 +102,12 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 .gototop{position: fixed;bottom: 20px; right: 20px;background: rgba(0,0,0,0.5);padding: 10px;color: #fff;}
 .gototop i{line-height: 0.5em;}
 
-
+@media (max-width: 1500px) {
+    
+	figure.effect-chico p{
+        font-size:9px;line-height: 1.7em; margin-left:0;
+    }
+}
 @media (max-width: 1200px) {
 	body{font:300 13px/13px Roboto,Arial,Helvetica;}
 	.navbar-brand{padding-top: 11px;}
