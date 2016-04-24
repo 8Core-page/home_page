@@ -86,7 +86,7 @@ angular.module('factories', [])
         {
             nombre: 'Jose Estrada',
             puesto: 'Desarrollador',
-            foto: 'images/Jose.png',
+            foto: 'images/Esvin.jpg',
             linked: 'https://www.facebook.com/esvin.jose.estrada',
             cuerpo: 'Muy Buena experiencia, es exelente, adios mucho gusto',
             id: ''

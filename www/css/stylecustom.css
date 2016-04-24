@@ -179,6 +179,12 @@ ul.navbar-nav > .active > a{
     background-position: 50% 50%;
     background-size: cover;
 }
+#homeSec2 .container-fluid .row{
+    margin-bottom: 40px;    
+}
+#homeSec4 .container .row{
+    margin-bottom: 30px;
+}
 /* ================== Contactus ==========================*/
 #homeSec5 form {
   margin-bottom: 50px;
