@@ -118,7 +118,6 @@
       	height: 48px;
         padding-top: 5px;
   	}
-    .navbar-brand span font{font-size: 20px;}
   	ul.navbar-nav a {
   	    padding: 0px 0px 0px 5px;
   	}
@@ -170,7 +169,7 @@
     body {padding-top: 60px;}
     .navbar-default {height: 60px; }
     .navbar-brand{padding-top: 5px;}
-    .navbar-brand span img {height: 35px;}
+    .navbar-brand img {height: 35px;}
     /*.navbar-brand span font{ display: none;}*/
     ul.navbar-nav a {padding: 5px 0px 0px 0px;}
     .navbar-collapse{ background: #fff;}
