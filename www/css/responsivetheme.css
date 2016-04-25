@@ -70,6 +70,10 @@
   {
     padding-right: 150px;
   }
+    .navbar-brand {
+      	height: 50px;
+        padding-top: 5px;
+  	}
   /* ------------ ChapList -----------*/
   .home-content p {
     font-size: 23px;
@@ -112,10 +116,15 @@
   	}
   	.navbar-brand {
       	height: 48px;
+        padding-top: 5px;
   	}
+    .navbar-brand span font{font-size: 20px;}
   	ul.navbar-nav a {
   	    padding: 0px 0px 0px 5px;
   	}
+    .navbar-nav{
+        padding-right: 40px;
+    }
     body {
       padding-top: 70px;
     }
@@ -160,7 +169,9 @@
     
     body {padding-top: 60px;}
     .navbar-default {height: 60px; }
-    .navbar-brand img {height: 30px;}
+    .navbar-brand{padding-top: 5px;}
+    .navbar-brand span img {height: 35px;}
+    /*.navbar-brand span font{ display: none;}*/
     ul.navbar-nav a {padding: 5px 0px 0px 0px;}
     .navbar-collapse{ background: #fff;}
     

@@ -10,7 +10,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" /></a>
+      <a class="navbar-brand" href="#">
+          <span>
+              <img src="images/LogoFinal.png" alt="logo"/>
+              <font>Oktacore</font> 
+          </span>
+        </a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" uib-collapse="navbarCollapsed">
@@ -31,23 +36,6 @@
             <img ng-src="{{slide.image}}" style="margin:auto;" class="img-responsive">
             <div class="carousel-caption">
                 <div ng-include = "slide.dirWeb"></div>
-                <!--
-                <div class="col-md-6 col-sm-6 col-xs-12 pull-right">
-                   <div class="home-feature center-block wow bounceIn" data-wow-duration="4s" data-wow-delay="3s" >
-                        <img class="img-responsive" src="images/chaplist/indice.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-12 pull-left">
-                    <div class="home-content wow fadeInLeft" data-wow-duration="3s" data-wow-delay="2s">
-                        <h1>ChapList</h1>
-                        <p>Las mejores <strong>ofertas</strong> en tu Smartphone, podras obtener tus productos a los mejores precios en tu establecimiento favorito, ademas de comparar precios y comprar mas por menos.</p>
-                        <button type="submit" class="btn btn-success ">
-                          <img src="images/playdown.png" width="40" /> <span>Descarga del Play Store</span>
-                        </button>
-                    </div>
-                </div>-->
-
-            <!--  <h5>Slide {{$index+1}}</h5>-->
             </div>
           </uib-slide>
       </uib-carousel>
