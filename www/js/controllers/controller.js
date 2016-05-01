@@ -10,7 +10,7 @@ angular.module('controller', [])
 
 .controller('homeCtrl', function ($scope, $state, factory,$anchorScroll,$location) {
     $scope.arrayMembers = [];
-    $scope.timerRunning = true;
+  //  $scope.timerRunning = true;
     $scope.arrayMembers = factory.getMembers();
 
     $scope.hola = function (pancho) {
@@ -47,6 +47,7 @@ angular.module('controller', [])
             cuerpo: testimonios[i].cuerpo,
             puesto: testimonios[i].puesto,
             linked: testimonios[i].linked,
+            twitter: testimonios[i].twitter,
             id: currIndex++
         });
     }

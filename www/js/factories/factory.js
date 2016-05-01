@@ -76,11 +76,24 @@ angular.module('factories', [])
         {
             nombre: 'ChapList',
             logo: 'images/chaplist/icon.png '
-    }, {
+          },
+          {
             nombre: 'TutoSite',
             logo: 'images/tutosite/Logo.png'
-    }
-                   ];
+          },
+          {
+            nombre: 'Revista Lapiz y Papel',
+            logo: 'http://lapizypapelgt.com/wp-content/uploads/2016/04/fondo1-768x768.jpg'
+          },
+          {
+            nombre: 'La Torre Supermercados',
+            logo: 'images/clientes/latorre.png'
+          },
+          {
+            nombre: 'Econo super',
+            logo: 'images/clientes/econosuper.jpg'
+          }
+        ];
 
     var testimonios = [
         {
@@ -88,12 +101,14 @@ angular.module('factories', [])
             puesto: 'Desarrollador',
             foto: 'images/Esvin.jpg',
             linked: 'https://www.facebook.com/esvin.jose.estrada',
+            twitter: 'https://twitter.com/estrada_esvin',
             cuerpo: 'Muy Buena experiencia, es exelente, adios mucho gusto',
             id: ''
     }, {
             nombre: 'TAmy Vivas',
             puesto: 'Desarrollador',
             linked: 'https://www.facebook.com/tamyg.vivas',
+            twitter: '',
             foto: 'https://yt3.ggpht.com/-SnGuBQR3Dt0/AAAAAAAAAAI/AAAAAAAAAAA/0Rk1XvDEjUM/s100-c-k-no/photo.jpg',
             cuerpo: 'Muy Buena experiencia, me parecen exelentes apps',
             id: ''
@@ -101,41 +116,47 @@ angular.module('factories', [])
             nombre: 'Jeyson Montenegro',
             puesto: 'Desarrollador',
             linked: 'https://www.facebook.com/MrJeyson',
-            foto: 'images/Jeyson.png',
+            twitter: '',
+            foto: 'images/Jeyson.jpg',
             cuerpo: 'Muy Buen trabajo departe de los muchachos!',
             id: ''
     }, {
             nombre: 'Jeremias Ortega',
             puesto: 'Desarrollador',
             linked: 'http://facebook.com/momero2424',
-            foto: 'images/Jeremias.png',
+            twitter: '',
+            foto: 'images/Jeremias.jpg',
             cuerpo: 'Excelente!!!!!!!',
             id: ''
     }, {
             nombre: 'Francisco Ardon',
             puesto: 'Desarrollador',
             linked: 'https://www.facebook.com/franciscorene.ardonguerra',
-            foto: 'images/Francisco.png',
+            twitter: '',
+            foto: 'images/Francisco.jpg',
             cuerpo: 'Generando buenas ideas!!!!',
             id: ''
     }, {
             nombre: 'Keneth Ubeda',
             puesto: 'Desarrollador',
             linked: '',
-            foto: 'images/Keneth.png',
+            twitter: '',
+            foto: 'images/Keneth.jpg',
             cuerpo: 'Generando buenas ideas!!!!',
             id: ''
       }, {
             nombre: 'Abel Gutierrez',
             puesto: 'Desarrollador',
-            linked: '',
+            linked: 'https://www.facebook.com/vegetalink',
+            twitter: '',
             foto: 'images/Abel.jpg',
             cuerpo: 'Generando buenas ideas!!!!',
             id: ''
       }, {
             nombre: 'Fernando Samayoa',
             puesto: 'Desarrollador',
-            linked: '',
+            linked: 'https://www.facebook.com/fernando.samayoa',
+            twitter: 'https://twitter.com/You_ReadThis',
             foto: 'images/Fernando.jpg',
             cuerpo: 'Generando buenas ideas!!!!',
             id: ''
