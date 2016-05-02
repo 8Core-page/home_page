@@ -99,7 +99,7 @@ angular.module('factories', [])
         {
             nombre: 'Jose Estrada',
             puesto: 'Desarrollador',
-            foto: 'images/Esvin.jpg',
+            foto: 'images/team/Esvin.jpg',
             linked: 'https://www.facebook.com/esvin.jose.estrada',
             twitter: 'https://twitter.com/estrada_esvin',
             cuerpo: 'Muy Buena experiencia, es exelente, adios mucho gusto',
@@ -117,7 +117,7 @@ angular.module('factories', [])
             puesto: 'Desarrollador',
             linked: 'https://www.facebook.com/MrJeyson',
             twitter: '',
-            foto: 'images/Jeyson.jpg',
+            foto: 'images/team/Jeyson.jpg',
             cuerpo: 'Muy Buen trabajo departe de los muchachos!',
             id: ''
     }, {
@@ -125,7 +125,7 @@ angular.module('factories', [])
             puesto: 'Desarrollador',
             linked: 'http://facebook.com/momero2424',
             twitter: '',
-            foto: 'images/Jeremias.jpg',
+            foto: 'images/team/Jeremias.jpg',
             cuerpo: 'Excelente!!!!!!!',
             id: ''
     }, {
@@ -133,7 +133,7 @@ angular.module('factories', [])
             puesto: 'Desarrollador',
             linked: 'https://www.facebook.com/franciscorene.ardonguerra',
             twitter: '',
-            foto: 'images/Francisco.jpg',
+            foto: 'images/team/Francisco.jpg',
             cuerpo: 'Generando buenas ideas!!!!',
             id: ''
     }, {
@@ -141,7 +141,7 @@ angular.module('factories', [])
             puesto: 'Desarrollador',
             linked: '',
             twitter: '',
-            foto: 'images/Keneth.jpg',
+            foto: 'images/team/Keneth.jpg',
             cuerpo: 'Generando buenas ideas!!!!',
             id: ''
       }, {
@@ -149,7 +149,7 @@ angular.module('factories', [])
             puesto: 'Desarrollador',
             linked: 'https://www.facebook.com/vegetalink',
             twitter: '',
-            foto: 'images/Abel.jpg',
+            foto: 'images/team/Abel.jpg',
             cuerpo: 'Generando buenas ideas!!!!',
             id: ''
       }, {
@@ -157,7 +157,7 @@ angular.module('factories', [])
             puesto: 'Desarrollador',
             linked: 'https://www.facebook.com/fernando.samayoa',
             twitter: 'https://twitter.com/You_ReadThis',
-            foto: 'images/Fernando.jpg',
+            foto: 'images/team/Fernando.jpg',
             cuerpo: 'Generando buenas ideas!!!!',
             id: ''
       }

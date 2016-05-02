@@ -2,6 +2,14 @@
 ================================================== */
 /* Dispositivos grandes, pantalla completa */
 
+@media(min-width : 1400px)
+{
+  #homeSec3
+  {
+    padding-left: 400px;
+    padding-right: 400px;
+  }
+}
 @media (min-width : 992px) {
     .tutosite {
         margin-top: 120px;
@@ -59,6 +67,11 @@
   .navbar-nav
   {
     padding-right: 150px;
+  }
+  #homeSec3
+  {
+    padding-left: 200px;
+    padding-right: 200px;
   }
   /* -------------- ChapList ---------------*/
   .home-content p {
@@ -193,7 +206,11 @@
     .navbar-brand{padding-top: 5px;}
     .navbar-brand img {height: 35px;}
     /*.navbar-brand span font{ display: none;}*/
-    ul.navbar-nav a {padding: 5px 0px 0px 0px;}
+    ul.navbar-nav a {
+        padding: 5px 0px 0px 0px;
+        font-size: 16px;
+        margin-left: 20px;
+    }
     .navbar-collapse{ background: #fff;}
 
     /* ---------------- Carousel Products ---------------*/
