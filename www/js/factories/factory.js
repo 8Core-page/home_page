@@ -102,7 +102,7 @@ angular.module('factories', [])
             foto: 'images/team/Esvin.jpg',
             linked: 'https://www.facebook.com/esvin.jose.estrada',
             twitter: 'https://twitter.com/estrada_esvin',
-            cuerpo: 'Muy Buena experiencia, es exelente, adios mucho gusto',
+            cuerpo: 'Muy Buena experiencia, Aprendizaje al maximo',
             id: ''
     }, {
             nombre: 'TAmy Vivas',
@@ -110,7 +110,7 @@ angular.module('factories', [])
             linked: 'https://www.facebook.com/tamyg.vivas',
             twitter: '',
             foto: 'https://yt3.ggpht.com/-SnGuBQR3Dt0/AAAAAAAAAAI/AAAAAAAAAAA/0Rk1XvDEjUM/s100-c-k-no/photo.jpg',
-            cuerpo: 'Muy Buena experiencia, me parecen exelentes apps',
+            cuerpo: 'Desarrollo exitoso, productos de alta Calidad',
             id: ''
     }, {
             nombre: 'Jeyson Montenegro',
@@ -118,7 +118,7 @@ angular.module('factories', [])
             linked: 'https://www.facebook.com/MrJeyson',
             twitter: '',
             foto: 'images/team/Jeyson.jpg',
-            cuerpo: 'Muy Buen trabajo departe de los muchachos!',
+            cuerpo: 'Es un equipo dedicado y entregado!',
             id: ''
     }, {
             nombre: 'Jeremias Ortega',
@@ -126,7 +126,7 @@ angular.module('factories', [])
             linked: 'http://facebook.com/momero2424',
             twitter: '',
             foto: 'images/team/Jeremias.jpg',
-            cuerpo: 'Excelente!!!!!!!',
+            cuerpo: 'Excelente interaccion del equipo!!',
             id: ''
     }, {
             nombre: 'Francisco Ardon',
@@ -134,7 +134,7 @@ angular.module('factories', [])
             linked: 'https://www.facebook.com/franciscorene.ardonguerra',
             twitter: '',
             foto: 'images/team/Francisco.jpg',
-            cuerpo: 'Generando buenas ideas!!!!',
+            cuerpo: 'Fidelizacion del cliente al 100%!!',
             id: ''
     }, {
             nombre: 'Keneth Ubeda',
@@ -142,7 +142,7 @@ angular.module('factories', [])
             linked: '',
             twitter: '',
             foto: 'images/team/Keneth.jpg',
-            cuerpo: 'Generando buenas ideas!!!!',
+            cuerpo: 'Generando ideas, innovacion en sus productos!',
             id: ''
       }, {
             nombre: 'Abel Gutierrez',
@@ -150,7 +150,7 @@ angular.module('factories', [])
             linked: 'https://www.facebook.com/vegetalink',
             twitter: '',
             foto: 'images/team/Abel.jpg',
-            cuerpo: 'Generando buenas ideas!!!!',
+            cuerpo: 'Retroalimentacion del cliente, Soporte constante!',
             id: ''
       }, {
             nombre: 'Fernando Samayoa',
@@ -158,7 +158,15 @@ angular.module('factories', [])
             linked: 'https://www.facebook.com/fernando.samayoa',
             twitter: 'https://twitter.com/You_ReadThis',
             foto: 'images/team/Fernando.jpg',
-            cuerpo: 'Generando buenas ideas!!!!',
+            cuerpo: 'Deadlines cumplidos, producto testeado y deployado!',
+            id: ''
+      }, {
+            nombre: 'Eiji De Paz',
+            puesto: 'Desarrollador',
+            linked: 'https://www.facebook.com/eiji.depazperez',
+            twitter: '',
+            foto: 'images/team/Eiji.jpg',
+            cuerpo: 'Calidad profesional y de sus productos.',
             id: ''
       }
       ];
